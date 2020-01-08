@@ -118,6 +118,13 @@
             "title": "高级 DBA",
             "words": "58 公司依靠 TiDB 数据库，解决了业务上的需求以及 MySQL 数据库的痛点问题。在使用经验上，我们推荐使用多核 CPU、SSD 磁盘的性能好的机器，并及时升级至最新版本。平时要关注慢 SQL 情况，关注由执行计划问题带来的慢 SQL 情况。期待 TiDB 做得更好，58 与 TiDB 共同成长。",
             "avatar": "https://download.pingcap.com/images/user-words/avatars/liuchunlei.png"
+        },
+        {
+            "name": "TUG member",
+            "company": "",
+            "title": "",
+            "words": "TiDB 高度兼容 MySQL，上手门槛很低。计算和存储分离的架构设计很优秀，可以很好的满足我们的需求。同时 TiDB 也有很活跃的社区，让大家可以很方便得参与其中一起建设产品。我们也计划积极推广 TiDB，从边缘业务到核心业务逐渐渗透，挖掘更多使用场景，贴近社区回馈社区。",
+            "avatar": "https://download.pingcap.com/images/user-words/avatars/general.png"
         }
     ],
     "section2": [
