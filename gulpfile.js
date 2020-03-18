@@ -2,7 +2,6 @@ const { spawn } = require('child_process')
 
 const { dest, series, src, watch } = require('gulp')
 const log = require('fancy-log')
-const PluginError = require('plugin-error')
 const less = require('gulp-less')
 const LessAutoprefix = require('less-plugin-autoprefix')
 const cleanCSS = require('gulp-clean-css')
