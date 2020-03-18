@@ -127,6 +127,7 @@ workflows:
             branches:
               only:
                 - src
+                - preview
       - preview:
           filters:
             branches:
