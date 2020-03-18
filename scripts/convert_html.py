@@ -1,19 +1,11 @@
-# convert html links of a tags and src of img tags
+# Convert html links of a tags and src of img tags
+# Please use python3 to execute this script
 
 from bs4 import BeautifulSoup
 
 import os
 import re
 import sys
-
-if sys.version_info.major == 3:
-    unicode = str
-
-try:
-    reload(sys) # Python 2.7
-    sys.setdefaultencoding('utf-8')
-except NameError:
-    pass
 
 abs_hyper_link_pattern = re.compile(r'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}')
 image_rel_src_pattern = re.compile(r'^[\.\/]*media\/')
@@ -37,7 +29,6 @@ for link in soup.find_all('a'):
     href = link['href']
     if href:
         if (not abs_hyper_link_pattern.match(href)) and href.rfind('.md') > 0:
-            
             href = href.replace('.md', '')
             href = re.sub(r'^[\.\/]*', '/', href, count=0, flags=0)
             href = os.path.normpath('/' + folder + doc_version + '/' + href)
@@ -57,7 +48,6 @@ for img in soup.find_all('img'):
             img['src'] = '/images/svgs/loader-spinner.svg'
             img['class'] = 'lazy'
 
-
-# write html
+# Write html
 with open(file_path, 'w') as f:
-    f.write(unicode(soup))
+    f.write(str(soup))

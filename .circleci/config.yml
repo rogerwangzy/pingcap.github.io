@@ -14,9 +14,9 @@ jobs:
       - checkout
 
       # Dependencies required for deploy
-      # python3-pip for awscli
-      # m4 for ocaml
-      - run: sudo apt-get install rsync Python-bs4 python3-pip m4 -y
+      # m4 for OCaml
+      - run: sudo apt update && sudo apt install rsync python3-pip m4 -y
+      - run: pip3 install -r requirements.txt
 
       # Download and cache dependencies and submodules
       - restore_cache:
