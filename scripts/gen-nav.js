@@ -97,5 +97,4 @@ if (args.length != 3) {
   )
 }
 
-console.log(`Start to genTableJSONFromMarkdown: ${args[2]}`)
 genTableJSONFromMarkdown(args[0], args[1], args[2])
