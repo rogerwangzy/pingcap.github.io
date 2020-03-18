@@ -96,4 +96,6 @@ if (args.length != 3) {
     'Usage: node <this> arg1 arg2 arg3 # arg1 markdown source path, arg2 json file path arg3 url prefix'
   )
 }
+
+console.log(`Start to genTableJSONFromMarkdown: ${args[2]}`)
 genTableJSONFromMarkdown(args[0], args[1], args[2])
